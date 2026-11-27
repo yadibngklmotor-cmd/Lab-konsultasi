@@ -1,13 +1,51 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lab Edukasi Keamanan</title>
+<style>
+body {
+  font-family: Arial;
+  text-align: center;
+  padding: 30px;
+  background: #f1f4f9;
+}
+.box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 400px;
+  margin: auto;
+}
+button {
+  padding: 12px 20px;
+  background: #1877f2;
+  color: white;
+  border: 0;
+  border-radius: 7px;
+}
+</style>
 </head>
-<body style="font-family:Arial;text-align:center;padding:30px">
+<body>
+<div class="box">
 <h2>LAB EDUKASI KEAMANAN</h2>
-<p>Ini adalah simulasi untuk belajar mengenali phishing.</p>
-<p>Jangan pernah memasukkan kata sandi atau OTP melalui tautan mencurigakan.</p>
-<button onclick="alert('Pelajaran: selalu periksa alamat situs sebelum masuk!')">Mulai Pelajaran</button>
+<p>Belajar mengenali tautan phishing.</p>
+
+<button onclick="pelajaran()">Mulai Simulasi</button>
+
+<div id="hasil"></div>
+</div>
+
+<script>
+function pelajaran() {
+ document.getElementById("hasil").innerHTML =
+ "<h3>⚠️ Waspada Phishing!</h3>" +
+ "<p>Halaman login palsu dapat digunakan untuk mencuri akun.</p>" +
+ "<p>Periksa alamat situs sebelum memasukkan data.</p>" +
+ "<p>Jangan pernah membagikan kata sandi atau OTP.</p>";
+}
+</script>
 </body>
 </html>
