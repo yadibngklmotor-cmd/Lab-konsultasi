@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lab Simulasi Phishing</title>
+</head>
+<body>
+<h1>LAB EDUKASI PHISHING</h1>
+<h2>Simulasi Form Login</h2>
+<p><strong>PERINGATAN: INI HANYA SIMULASI, BUKAN HALAMAN RESMI.</strong></p>
+
+<form id="demo">
+  <label>Email dummy:</label>
+  <input type="email" required>
+  <label>Password dummy:</label>
+  <input type="password" required>
+  <button type="submit">Uji Simulasi</button>
+</form>
+
+<p id="hasil"></p>
+
+<script>
+document.getElementById("demo").addEventListener("submit", function(e) {
+  e.preventDefault();
+  document.getElementById("hasil").textContent =
+    "Simulasi berhasil. Tidak ada data yang dikirim atau disimpan.";
+  this.reset();
+});
+</script>
+</body>
+</html>
